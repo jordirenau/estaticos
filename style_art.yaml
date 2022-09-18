@@ -1,0 +1,34 @@
+---
+# Configuración
+documentclass: scrartcl
+lang: es
+geometry: 
+- top=2.5cm
+- bottom=2.5cm
+- left=2.5cm
+- right=2.5cm
+#mainfont: Arial #LiberationSans
+fontfamily: palatino
+fontsize: 11pt
+#bibliography: bibliografia.bib
+colorlinks: true
+toc: false
+caption-justification: centering
+
+# Documento
+title: 'Title'
+subtitle: 'Subtitle'
+author: 'Jordi Renau'
+date: \today
+
+
+
+
+# pandoc title.md -o title.pdf 
+
+# si requieres de inckuir referencias necesitas: 
+# -F pandoc-crossref -N
+
+# Si se necesitan referencias aquí se incluye el código, las referencia se usan las de zotero con estilo IEEE:
+# --citeproc --bibliography ~/Documents/Referencias/MisReferencias.bib --csl ~/Documents/Referencias/ieee.csl
+---
