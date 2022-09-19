@@ -1,0 +1,125 @@
+\documentclass[11pt,a4paper,twoside,onecolumn,notitlepage,final]{scrartcl}
+\usepackage[spanish]{babel}
+\usepackage[utf8x]{inputenc}
+
+\usepackage[english]{babel}
+
+\usepackage{ucs}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm]{geometry}
+\usepackage{abstract}
+
+\usepackage[colorlinks=true]{hyperref}
+
+
+\usepackage{siunitx}
+\sisetup{detect-all}
+
+
+%% Encabezados y pié de página
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\fancyhf{}
+%Encabezado
+\lhead{\ldots el titulo\ldots{}}
+\rhead{\href{mailto:jordi.renau@uchceu.es}{jordi.renau@uchceu.es}}
+%Pie de página
+\usepackage{lastpage}
+\lfoot{Universidad CEU Cardenal Herrera}
+\rfoot{Pág. \thepage/\pageref*{LastPage}}
+
+
+
+% Este trozo de código adapta las imágenes a los tamaños de impresión que tocan. No preguntes más.
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+
+
+
+\newcommand{\mititulo}{ Mi tutulo aquí }
+\newcommand{\misubtitulo}{ Algo por abajo en mejor tamaño }
+%\author{El Jordi}
+%\subtitle{Algo por abajo en mejor tamaño}
+\date{\today}
+
+
+
+
+
+
+
+
+
+
+
+\begin{document}
+	\renewcommand{\tablename}{Tabla}
+	
+			\begin{flushright}
+			\thispagestyle{empty}
+	\large
+	\textit{Autor}: Jordi Renau (\href{mailto:jordi.renau@uchceu.es}{jordi.renau@uchceu.es}) \\
+	Universidad CEU Cardenal Herrera %\\[0.5cm]
+
+	\Huge 
+	\mititulo \\[0.5cm]
+	\huge
+	\misubtitulo \\[0.5cm]
+	\small \textit{ \today }
+\end{flushright}
+		~
+
+\hrule
+
+
+
+
+\hypertarget{esta-es-una-primera-secciuxf3n-del-documento}{%
+\section{Esta es una primera sección del
+documento}\label{esta-es-una-primera-secciuxf3n-del-documento}}
+
+Este es un fichero mínimo de prueba de templates latex
+
+Ponemos un enlace como latex \href{www.uchceu.es}{así} y también como
+\href{www.uchceu.es}{tex a tope} y los construye exactamente igual.
+
+\hypertarget{esta-es-una-segunda-secciuxf3n-donde-tenemos-datos-y-figuras}{%
+\section{Esta es una segunda sección donde tenemos datos y
+figuras}\label{esta-es-una-segunda-secciuxf3n-donde-tenemos-datos-y-figuras}}
+
+Una figura como esta que referencia como figura \ref{fig:internet}
+
+\begin{figure}
+\hypertarget{fig:internet}{%
+\centering
+\includegraphics[width=0.6\textwidth,height=\textheight]{https://raw.githubusercontent.com/jordirenau/jordirenau.github.io/main/docs/_projects/2018-01-01-dovelar_images/IMG_6163.JPG}
+\caption{Viene de internet}\label{fig:internet}
+}
+\end{figure}
+
+Aquí pongo el logo de la eset a ver si me deja.
+
+\begin{figure}
+\hypertarget{fig:logo}{%
+\centering
+\includegraphics[width=0.3\textwidth,height=\textheight]{https://raw.githubusercontent.com/jordirenau/estaticos/main/00_fac_eset.png}
+\caption{Logo ESET}\label{fig:logo}
+}
+\end{figure}
+\end{document}
