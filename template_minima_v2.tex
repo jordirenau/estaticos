@@ -19,16 +19,38 @@
 
 %% Encabezados y pié de página
 \usepackage{fancyhdr}
-\pagestyle{fancy}
+
+
+% Determinamos si queremos estilos o no aquí, en el documento.
+\pagestyle{$pagestyle$}
 
 \fancyhf{}
 %Encabezado
+$if(head-left)$
 \lhead{$head-left$}
+$else$
+\lhead{}
+$endif$
+
+$if(head-right)$
 \rhead{$head-right$}
+$else$
+\rhead{}
+$endif$
+
+$if(foot-left)$
 %Pie de página
 \usepackage{lastpage}
 \lfoot{$foot-left$}
+$else$
+\lfoot{}
+$endif$
+
+$if(foot-right)$
 \rfoot{$foot-right$}
+$else$
+		\rfoot{ \thepage/\pageref*{LastPage}}
+$endif$
 
 
 
