@@ -1,0 +1,123 @@
+\documentclass[11pt,a4paper,twoside,onecolumn,notitlepage,final]{scrartcl}
+\usepackage[spanish]{babel}
+\usepackage[utf8x]{inputenc}
+
+\usepackage[$lang$]{babel}
+
+\usepackage{ucs}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm]{geometry}
+\usepackage{abstract}
+
+\usepackage[colorlinks=true]{hyperref}
+
+
+\usepackage{siunitx}
+\sisetup{detect-all}
+
+
+%% Encabezados y pié de página
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\fancyhf{}
+%Encabezado
+\lhead{$head-left$}
+\rhead{$head-right$}
+%Pie de página
+\usepackage{lastpage}
+\lfoot{$foot-left$}
+\rfoot{$foot-right$}
+
+
+
+% Este trozo de código adapta las imágenes a los tamaños de impresión que tocan. No preguntes más.
+$if(graphics)$
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+$endif$
+
+
+
+
+
+\newcommand{\mititulo}{ $title$ }
+\newcommand{\misubtitulo}{ $subtitle$ }
+%\author{$author$}
+%\subtitle{$subtitle$}
+\date{$date$}
+
+
+
+
+
+
+
+
+
+
+
+\begin{document}
+	\renewcommand{\tablename}{Tabla}
+	
+	$if(maketitle)$
+	\begin{titlepage}
+		
+		\begin{minipage}[c]{0.29\textwidth}
+%\begin{figure}
+	\includegraphics[width=\linewidth]{https://raw.githubusercontent.com/jordirenau/estaticos/main/00_fac_eset.png}
+%\end{figure}	
+	\end{minipage}
+	\begin{minipage}[r]{0.7\textwidth}
+		\begin{flushright}
+			\large
+			\textit{Autor}: Jordi Renau (\href{mailto:jordi.renau@uchceu.es}{jordi.renau@uchceu.es}) \\
+			Universidad CEU Cardenal Herrera %\\[0.5cm]
+		\end{flushright}
+		
+	\end{minipage}
+	
+	\begin{flushright}
+		\Huge 
+		\mititulo \\[0.5cm]
+		\huge
+		\misubtitulo \\[1.5cm]
+	\end{flushright}
+	%	\textit{Actualizado}: \today\\
+	$if(toc)$
+	\hrule
+	\renewcommand{\contentsname}{Contenidos \small (\textit{Actualizado}: \today)}
+	
+	\tableofcontents 
+	$if(figure-toc)$
+	\renewcommand{\listfigurename}{Lista de figuras}
+	\listoffigures
+	$endif$
+	$if(table-toc)$
+	\renewcommand{\listtablename}{Lista de tablas}
+	\listoftables
+	$endif$
+	
+	~
+	
+	\hrule
+	$endif$
+\end{titlepage}
+$endif$
+
+
+$body$
+\end{document}
