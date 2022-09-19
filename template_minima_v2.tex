@@ -1,5 +1,4 @@
 \documentclass[11pt,a4paper,twoside,onecolumn,notitlepage,final]{scrartcl}
-\usepackage[spanish]{babel}
 \usepackage[utf8x]{inputenc}
 
 \usepackage[$lang$]{babel}
@@ -75,30 +74,16 @@ $endif$
 	
 	$if(titlepage)$
 	\begin{titlepage}
-		
-%		\begin{minipage}[c]{0.29\textwidth}
-%			$if(logo)$
-%			\includegraphics[width=\linewidth]{$logo-path$}%https://raw.githubusercontent.com/jordirenau/estaticos/main/00_fac_eset.png}
-%			$else$
-%			~
-%			$endif$
-%	\end{minipage}
-%	\begin{minipage}[r]{0.7\textwidth}
 		\begin{flushright}
 			\large
-			\textit{Autor}: Jordi Renau (\href{mailto:jordi.renau@uchceu.es}{jordi.renau@uchceu.es}) \\
+			Jordi Renau (\href{mailto:jordi.renau@uchceu.es}{jordi.renau@uchceu.es}) \\
 			Universidad CEU Cardenal Herrera %\\[0.5cm]
-%		\end{flushright}
-		
-%	\end{minipage}
-	
-%	\begin{flushright}
+
 		\Huge 
 		\mititulo \\[0.5cm]
 		\huge
 		\misubtitulo \\[1.5cm]
 	\end{flushright}
-	%	\textit{Actualizado}: \today\\
 	$if(toc)$
 	\hrule
 	\renewcommand{\contentsname}{Contenidos \small (\textit{Actualizado}: \today)}
@@ -122,15 +107,14 @@ $else$
 		\begin{flushright}
 			\thispagestyle{empty}
 	\large
-	\textit{Autor}: Jordi Renau (\href{mailto:jordi.renau@uchceu.es}{jordi.renau@uchceu.es}) \\
+	Jordi Renau (\href{mailto:jordi.renau@uchceu.es}{jordi.renau@uchceu.es}) \\
 	Universidad CEU Cardenal Herrera %\\[0.5cm]
 
 	\Huge 
 	\mititulo \\[0.5cm]
 	\huge
 	\misubtitulo \\[0.5cm]
-	\small \textit{Actualizado}: \today
-
+	\small \today
 \end{flushright}
 		~
 
