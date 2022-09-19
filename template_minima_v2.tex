@@ -73,24 +73,26 @@ $endif$
 \begin{document}
 	\renewcommand{\tablename}{Tabla}
 	
-	$if(maketitle)$
+	$if(titlepage)$
 	\begin{titlepage}
 		
-		\begin{minipage}[c]{0.29\textwidth}
-%\begin{figure}
-	\includegraphics[width=\linewidth]{00_fac_eset.png}%https://raw.githubusercontent.com/jordirenau/estaticos/main/00_fac_eset.png}
-%\end{figure}	
-	\end{minipage}
-	\begin{minipage}[r]{0.7\textwidth}
+%		\begin{minipage}[c]{0.29\textwidth}
+%			$if(logo)$
+%			\includegraphics[width=\linewidth]{$logo-path$}%https://raw.githubusercontent.com/jordirenau/estaticos/main/00_fac_eset.png}
+%			$else$
+%			~
+%			$endif$
+%	\end{minipage}
+%	\begin{minipage}[r]{0.7\textwidth}
 		\begin{flushright}
 			\large
 			\textit{Autor}: Jordi Renau (\href{mailto:jordi.renau@uchceu.es}{jordi.renau@uchceu.es}) \\
 			Universidad CEU Cardenal Herrera %\\[0.5cm]
-		\end{flushright}
+%		\end{flushright}
 		
-	\end{minipage}
+%	\end{minipage}
 	
-	\begin{flushright}
+%	\begin{flushright}
 		\Huge 
 		\mititulo \\[0.5cm]
 		\huge
@@ -116,7 +118,25 @@ $endif$
 	\hrule
 	$endif$
 \end{titlepage}
+$else$
+		\begin{flushright}
+			\thispagestyle{empty}
+	\large
+	\textit{Autor}: Jordi Renau (\href{mailto:jordi.renau@uchceu.es}{jordi.renau@uchceu.es}) \\
+	Universidad CEU Cardenal Herrera %\\[0.5cm]
+
+	\Huge 
+	\mititulo \\[0.5cm]
+	\huge
+	\misubtitulo \\[0.5cm]
+
+\end{flushright}
+		~
+
+\hrule
 $endif$
+
+
 
 
 $body$
