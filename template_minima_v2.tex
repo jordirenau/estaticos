@@ -146,8 +146,8 @@ $if(titlepage)$
 	$if(toc)$
 	\hrule
 	\renewcommand{\contentsname}{Contenidos \small (\textit{Actualizado}: \today)}
-	
 	\tableofcontents 
+	$endif$
 	$if(figure-toc)$
 	\renewcommand{\listfigurename}{Lista de figuras}
 	\listoffigures
@@ -156,11 +156,9 @@ $if(titlepage)$
 	\renewcommand{\listtablename}{Lista de tablas}
 	\listoftables
 	$endif$
-	
 	~
-	
 	\hrule
-	$endif$
+	
 	\end{titlepage}
 
 $else$
@@ -176,9 +174,21 @@ $else$
 				\misubtitulo \\[0.5cm]
 				\small \today
 	\end{flushright}
-
+	$if(toc)$
+		\hrule
+		\renewcommand{\contentsname}{Contenidos \small (\textit{Actualizado}: \today)}
+		\tableofcontents 
+		$endif$
+		$if(figure-toc)$
+		\renewcommand{\listfigurename}{Lista de figuras}
+		\listoffigures
+		$endif$
+		$if(table-toc)$
+		\renewcommand{\listtablename}{Lista de tablas}
+		\listoftables
+		$endif$
 		~
-	\hrule
+		\hrule
 $endif$
 
 
