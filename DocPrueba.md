@@ -10,6 +10,8 @@ date: \today
 
 # Idioma para el paquete babel
 lang: 'english'
+fontsize: '11pt'
+
 
 # Estos parámetros definen la entrada de la primera página
 titlepage: false #Mete una página para el título o no
@@ -21,11 +23,13 @@ figure-toc: true
 
 
 # Encabezados
-# Dentro del paquete fancyr
-head-left: '...el titulo...'
+# Dentro del paquete fancyr. Podemos seleccionar un estilo sin vabeceras: empty; un estilo sólo con números de página: plain o el personalizado: fancy
+
+pagestyle: fancy
+head-left: 'Encabezado'
 head-right: '\href{mailto:jordi.renau@uchceu.es}{jordi.renau@uchceu.es}'
 foot-left: 'Universidad CEU Cardenal Herrera'
-foot-right: 'Pág. \thepage/\pageref*{LastPage}'
+#foot-right: #'Pág. \thepage/\pageref*{LastPage}'
 ---
 
 
