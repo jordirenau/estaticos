@@ -131,7 +131,7 @@ $endif$
 \begin{document}
 	\renewcommand{\tablename}{Tabla}
 	
-	$if(titlepage)$
+$if(titlepage)$
 	\begin{titlepage}
 		\begin{flushright}
 			\large
@@ -161,36 +161,24 @@ $endif$
 	
 	\hrule
 	$endif$
-\end{titlepage}
+	\end{titlepage}
+
 $else$
 		\begin{flushright}
-			\thispagestyle{empty}
-	\large
-	Jordi Renau (\href{mailto:jordi.renau@uchceu.es}{jordi.renau@uchceu.es}) \\
-	Universidad CEU Cardenal Herrera %\\[0.5cm]
+				\thispagestyle{empty}
+				\large
+				Jordi Renau (\href{mailto:jordi.renau@uchceu.es}{jordi.renau@uchceu.es}) \\
+				Universidad CEU Cardenal Herrera %\\[0.5cm]
+			
+				\Huge 
+				\mititulo \\[0.5cm]
+				\huge
+				\misubtitulo \\[0.5cm]
+				\small \today
+	\end{flushright}
 
-	\Huge 
-	\mititulo \\[0.5cm]
-	\huge
-	\misubtitulo \\[0.5cm]
-	\small \today
-\end{flushright}
-
-	$if(toc)$
-	\hrule
-		\renewcommand{\contentsname}{Contenidos \small (\textit{Actualizado}: \today)}
-		\tableofcontents 
-	$if(figure-toc)$
-		\renewcommand{\listfigurename}{Lista de figuras}
-		\listoffigures
-	$endif$
-	$if(table-toc)$
-		\renewcommand{\listtablename}{Lista de tablas}
-		\listoftables
-	$endif$
 		~
-
-\hrule
+	\hrule
 $endif$
 
 
