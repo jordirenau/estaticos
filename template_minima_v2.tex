@@ -45,11 +45,13 @@
 \usepackage[left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm]{geometry}
 \usepackage{abstract}
 
-\usepackage[colorlinks=true]{hyperref}
+\usepackage[$if(colorlinks)$colorlinks=true$else$colorlinks=false$endif$]{hyperref}
 
 
 \usepackage{siunitx}
 \sisetup{detect-all}
+
+\setmainfont{TeX Gyre Pagella}
 
 
 %% Encabezados y pié de página
