@@ -45,9 +45,7 @@
 \usepackage[left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm]{geometry}
 \usepackage{abstract}
 
-\usepackage[colorlinks= $if(colorlink)$true$else$false$endif$]{hyperref}
-%\usepackage[colorlinks=$colorlink$]{hyperref}
-
+\usepackage[colorlinks=true]{hyperref}
 
 
 \usepackage{siunitx}
@@ -177,6 +175,19 @@ $else$
 	\misubtitulo \\[0.5cm]
 	\small \today
 \end{flushright}
+
+	$if(toc)$
+	\hrule
+		\renewcommand{\contentsname}{Contenidos \small (\textit{Actualizado}: \today)}
+		\tableofcontents 
+	$if(figure-toc)$
+		\renewcommand{\listfigurename}{Lista de figuras}
+		\listoffigures
+	$endif$
+	$if(table-toc)$
+		\renewcommand{\listtablename}{Lista de tablas}
+		\listoftables
+	$endif$
 		~
 
 \hrule
