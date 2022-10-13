@@ -122,7 +122,7 @@ $endif$
 
 
 
-% Slgunos problemas de listas se solucionan con este apartado.
+% Algunos problemas de listas se solucionan con este apartado.
 \providecommand{\tightlist}{%
 	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
@@ -177,6 +177,7 @@ $else$
 				\small \today
 	\end{flushright}
 	$if(toc)$
+		\small
 		\hrule
 		\renewcommand{\contentsname}{Contenidos}
 		\tableofcontents 
@@ -188,6 +189,7 @@ $else$
 		$if(table-toc)$
 		\renewcommand{\listtablename}{Lista de tablas}
 		\listoftables
+		\normalsize
 		$endif$
 		~
 		\hrule
