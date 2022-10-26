@@ -26,13 +26,13 @@
 \begin{document}
 	
 	$if(maketitle)$
-	\maketitle
+		\maketitle
 	$endif$
 	
 	$body$
 	
 	$if(citaciones)$
-		\bibliography{$bibliography$}
 		\bibliographystyle{ieeetr}
+		\bibliography{$bibliography$}
 	$endif$
 \end{document}
