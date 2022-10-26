@@ -25,14 +25,15 @@
 
 \begin{document}
 	
-	$if(maketitle)$
-		\maketitle
-	$endif$
+$if(maketitle)$
+\maketitle
+$endif$
 	
-	$body$
+$body$
 	
-	$if(citaciones)$
-		\bibliographystyle{ieeetr}
-		\bibliography{$bibliography$}
-	$endif$
+$if(citaciones)$
+\bibliographystyle{ieeetr}
+\bibliography{$bibliography$}
+$endif$
+
 \end{document}
