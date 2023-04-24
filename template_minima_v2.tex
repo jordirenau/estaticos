@@ -130,9 +130,9 @@ $endif$
 \providecommand{\tightlist}{%
 	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
-
-
-
+$if(biblio)$
+\usepackage($citation_package$)
+$endif$
 
 \begin{document}
 	\renewcommand{\tablename}{Tabla}
@@ -205,4 +205,10 @@ $endif$
 
 
 $body$
+
+$if(biblio)$
+	\bibliography{$bibliography$}
+	\bibliographystyle{ieeetr}
+$endif$
+
 \end{document}
