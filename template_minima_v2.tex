@@ -186,11 +186,11 @@ $if(titlepage)$
 	\tableofcontents 
 	$endif$
 	$if(figure-toc)$
-	\renewcommand{\listfigurename}{Lista de figuras}
+	%\renewcommand{\listfigurename}{Lista de figuras}
 	\listoffigures
 	$endif$
 	$if(table-toc)$
-	\renewcommand{\listtablename}{Lista de tablas}
+	%\renewcommand{\listtablename}{Lista de tablas}
 	\listoftables
 	\normalsize
 	$endif$
@@ -210,7 +210,7 @@ $else$
 				\mititulo \\[0.5cm]
 				\huge
 				\misubtitulo \\[0.5cm]
-				\small Actualizado: \today
+				\small Updated: \today
 	\end{flushright}
 	$if(toc)$
 		\small
