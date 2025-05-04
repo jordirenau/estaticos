@@ -1,0 +1,42 @@
+---
+title: "Introducción a los intervalos de confianza"
+subtitle: "Cálculo de intervalos de confianza con hojas de cálculo"
+author: "Jordi Renau (jordi.renau@uchceu.es)"
+date: \today
+lugar: "Universidad CEU Cardenal Herrera"
+
+
+
+#bibliography: Bibliografia/Referencias.bib
+# Documento preparado para template_minima_v2.tex o en esta web: https://raw.githubusercontent.com/jordirenau/estaticos/main/template_minima_v2.tex		
+# pandoc 202209_Proposal_Electrical.md -o 202209_Proposal_Electrical.pdf --template https://raw.githubusercontent.com/jordirenau/estaticos/main/template_minima_v2.tex
+
+# Idioma para el paquete babel
+lang: 'spanish'
+fontsize: '12pt'
+
+# https://tug.org/FontCatalogue/
+fuentes: dejavu #tgheros #palatino 
+
+
+# Estos parámetros definen la entrada de la primera página
+titlepage: false #Mete una página para el título o no
+# Los listados no aparecen si no está activada la página independiente de portada
+toc: false
+table-toc: false
+figure-toc: false
+
+
+# Encabezados
+encabezado-izq: 
+encabezado-centro: 
+encabezado-der: 
+
+pie-izq: 
+pie-der: 
+# Pie-centro va página
+
+
+# Numeración de los encabezados
+nivel-encabezados: 0
+---
