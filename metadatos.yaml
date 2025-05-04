@@ -1,15 +1,10 @@
 ---
-title: "Introducción a los intervalos de confianza"
-subtitle: "Cálculo de intervalos de confianza con hojas de cálculo"
+title: "Titulo en metadatos"
+subtitle: "También puedes cambiar título y subtitulo en metadatos dentro del *.md"
 author: "Jordi Renau (jordi.renau@uchceu.es)"
 date: \today
 lugar: "Universidad CEU Cardenal Herrera"
 
-
-
-#bibliography: Bibliografia/Referencias.bib
-# Documento preparado para template_minima_v2.tex o en esta web: https://raw.githubusercontent.com/jordirenau/estaticos/main/template_minima_v2.tex		
-# pandoc 202209_Proposal_Electrical.md -o 202209_Proposal_Electrical.pdf --template https://raw.githubusercontent.com/jordirenau/estaticos/main/template_minima_v2.tex
 
 # Idioma para el paquete babel
 lang: 'spanish'
