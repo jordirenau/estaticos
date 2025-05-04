@@ -128,12 +128,12 @@
 
 \usepackage{lastpage}
 \clearpairofpagestyles
-\ihead{Encabezado izquierdo}
-\chead{Encabezado central}
-\ohead{Encabezado derecho}
-\ifoot{Pie de página izquierdo}
+\ihead{$encabezado-izq$}
+\chead{$encabezado-centro$}
+\ohead{$encabezado-der$}
+\ifoot{$pie-izq$}
 \cfoot{Pág.: \thepage~ de \pageref*{LastPage}}
-\ofoot{Pie de página derecho}
+\ofoot{$pie-der$}
 \pagestyle{scrheadings}
 
 
@@ -146,6 +146,7 @@
 
 
 \begin{document}
+\thispagestyle{empty}
 	%\renewcommand{\tablename}{Tabla}
 	
 \begin{minipage}[c]{0.29\textwidth}
