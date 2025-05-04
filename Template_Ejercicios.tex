@@ -37,11 +37,14 @@
 
 
 \documentclass[$fontsize$,a4paper,twoside,onecolumn]{scrartcl}
+\usepackage[automark,headsepline,footsepline]{scrlayer-scrpage}
 \usepackage[utf8x]{inputenc}
 
 \usepackage[$lang$]{babel}
 % https://tug.org/FontCatalogue/
 \usepackage{$fuentes$}
+
+
 \usepackage{ucs}
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -62,11 +65,6 @@
 \usepackage{mathpazo}  % math & text
 
 
-%% Encabezados y pié de página
-\usepackage{fancyhdr}
-
-
-
 
 % Este trozo de código adapta las imágenes a los tamaños de impresión que tocan. No preguntes más.
 
@@ -83,21 +81,6 @@
 \makeatletter
 \def\fps@figure{htbp}
 \makeatother
-
-
-
-
-
-
-\newcommand{\mititulo}{ $title$ }
-\newcommand{\misubtitulo}{ $subtitle$ }
-\newcommand{\ELautor}{$author$}
-\subtitle{$subtitle$}
-\date{$date$}
-\newcommand{\dedonde}{$lugar$}
-
-
-
 
 
 % Algunos problemas de listas se solucionan con este apartado.
@@ -132,8 +115,29 @@
 \newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
 \newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 
+
+
+
+
+\newcommand{\mititulo}{ $title$ }
+\newcommand{\misubtitulo}{ $subtitle$ }
+\newcommand{\ELautor}{$author$}
+\subtitle{$subtitle$}
+\date{$date$}
+\newcommand{\dedonde}{$lugar$}
+
 \usepackage{lastpage}
+\clearpairofpagestyles
+\ihead{Encabezado izquierdo}
+\chead{Encabezado central}
+\ohead{Encabezado derecho}
+\ifoot{Pie de página izquierdo}
 \cfoot{Pág.: \thepage~ de \pageref*{LastPage}}
+\ofoot{Pie de página derecho}
+\pagestyle{scrheadings}
+
+
+
 
 
 
