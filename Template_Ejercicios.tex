@@ -128,14 +128,15 @@
 
 \usepackage{lastpage}
 \clearpairofpagestyles
-\ihead{$encabezado-izq$}
-\chead{$encabezado-centro$}
-\ohead{$encabezado-der$}
-\ifoot{$pie-izq$}
-\cfoot{Pág.: \thepage~ de \pageref*{LastPage}}
-\ofoot{$pie-der$}
+\ihead{\small $encabezado-izq$}
+\chead{\small $encabezado-centro$}
+\ohead{\small $encabezado-der$}
+\ifoot{\small $pie-izq$}
+\cfoot{\small Pág.: \thepage~ de \pageref*{LastPage}}
+\ofoot{\small $pie-der$}
 \pagestyle{scrheadings}
-
+\renewcommand{\headrulewidth}{0pt} % Eliminar línea del encabezado
+\renewcommand{\footrulewidth}{0pt} % Eliminar línea del pie de página
 
 
 
